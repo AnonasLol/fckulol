@@ -1,0 +1,6 @@
+
+# Added by cp.mchost.ru	2016-05-02
+AuthType	Basic
+AuthName	"Authorization"
+AuthUserFile	/home/httpd/vhosts/bank-epti.mcdir.ru/httpdocs/my/.htpass
+Require	valid-user

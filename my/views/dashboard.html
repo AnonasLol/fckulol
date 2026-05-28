@@ -1,0 +1,182 @@
+<div class="page page-dashboard" data-ng-controller="DashboardCtrl">
+
+    <!-- Stats -->
+    <div class="row">
+        <div class="col-lg-3 col-xsm-6">
+            <div class="panel mini-box">
+                <span class="btn-icon-lined btn-icon-round btn-icon-lg-alt btn-success">
+                    <i class="fa fa-rub"></i>
+                </span>
+                <div class="box-info">
+                    <p class="size-h2">46 000 <span class="size-h4"></span></p>
+                    <p class="text-muted"><span data-i18n="Лимит"></span></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xsm-6">
+            <div class="panel mini-box">
+                <span class="btn-icon-lined btn-icon-round btn-icon-lg-alt btn-info">
+                    <i class="fa fa-users"></i>
+                </span>
+                <div class="box-info">
+                    <p class="size-h2">0,5 <span class="size-h4">%</span></p>
+                    <p class="text-muted"><span data-i18n="Ставка"></span></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xsm-6">
+            <div class="panel mini-box">
+                <span class="btn-icon-lined btn-icon-round btn-icon-lg-alt btn-warning">
+                    <i class="fa fa-refresh"></i>
+                </span>
+                <div class="box-info">
+                    <p class="size-h2">0</p>
+                    <p class="text-muted"><span data-i18n="Долг"></span></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xsm-6">
+            <div class="panel mini-box">
+                <span class="btn-icon-lined btn-icon-round btn-icon-lg-alt btn-danger">
+                    <i class="fa fa-calendar"></i>
+                </span>
+                <div class="box-info">
+                    <p class="size-h2">120</p>
+                    <p class="text-muted"><span data-i18n="Дней"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end stats -->
+
+    <div class="row">
+
+       
+        <div class="col-lg-12">
+                <div class="callout callout-danger">
+                <h4>Ваш аккаунт не идентифицирован!</h4>
+                <p>Уважаемый клиент! Для того, чтобы получить займ на банковскую карту, наличными или на аккаунты электронных платёжных систем, Вам необходимо подтвердить свою личность. Самый простой способ подтверждения - это привязка именной банковской карты к Вашему аккаунту. Привязав карту единожды, Вы сможете в два клика получать на неё займы в любое время</p>
+        <div data-ng-controller="ModalDemoCtrl">
+        <script type="text/ng-template" id="myModalContent.html">
+                        <div class="modal-header">
+                            <h3>Добавление банковской карты</h3>
+                        </div>
+                        <div class="modal-body">
+                            Перед добавлением банковской карты к аккаунту пожалуйста убедитесь, что она соответствует требованиям безопасности Фикус Займа:<br/>
+                            - Регистрируемая карта должна быть выпущена на Ваше имя.<br/>
+                            - Мы принимаем дебетовые и кредитные банковские карты Visa или MasterCard (кроме Maestro).<br/>
+                            - Эмитентом карты должен являться банк, работающий на территории РФ.<br/>
+                            - На счету карты должно быть не менее 300 рублей. <br/><br/>
+                            На банковской карте будет заблокирована случайная сумма до 300 рублей. Если на Вашей карте будет недостаточно средств, Ваш аккаунт будет заблокирован. Пожалуйста, отнеситесь серьёзнее к данной операции.
+                        </div>
+        
+                        <div class="modal-footer">
+                            <a href="http://yasobe.ru/na/bankepti" class="btn btn-primary">Добавить карту</a>
+                            <button class="btn btn-warning" ng-click="cancel()">Отменить</button>
+                        </div>
+                    </script>
+        <button class="btn btn-gap-v btn-success" ng-click="open()">Привязать карту</button>&nbsp<button class="btn btn-gap-v btn-info" ng-click="open()">Выбрать другой способ</button>
+            </div>
+
+            </div>
+
+            
+        </div>
+    </div>
+
+
+<section class="panel panel-default">
+        <div class="panel-heading"><span class="glyphicon glyphicon-plus-sign"></span> Получение займа</div>
+        <div class="panel-body">
+            <div class="divider divider-lg"></div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="ui-bullet">
+                        <div class="btn-icon btn-icon-round btn-icon-lg bg-primary">
+                            <i class="fa fa-credit-card"></i>
+                        </div>
+                        <div class="ui-bullet-content">
+                            <h3>Кредитная карта</h3>
+                            <p>Перевод займа за 15 минут на банковскую карту платёжной системы VISA или MasterCard.</p> 
+                            </br/>
+                            <button popover-placement="top" popover-title="Аккаунт не идентифицирован" popover="Пожалуйста, пройдите идентификацию для получения займа" popover-append-to-body="true" class="btn btn-success">Получить деньги</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="ui-bullet">
+                        <div class="btn-icon btn-icon-round btn-icon-lg bg-primary">
+                            <p>Q</p>
+                        </div>
+                        <div class="ui-bullet-content">
+                            <h3>QIWI кошелёк</h3>
+                            <p>Получите займ за 20 минут на ваш идентифицированный российский киви кошелёк.</p> 
+                            </br/>
+                            <button popover-placement="top" popover-title="Аккаунт не идентифицирован" popover="Пожалуйста, пройдите идентификацию для получения займа" popover-append-to-body="true" class="btn btn-success">Получить деньги</button>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="col-md-4">
+                    <div class="ui-bullet">
+                        <div class="btn-icon btn-icon-round btn-icon-lg bg-primary">
+                            <i class="fa fa-bank"></i>
+                        </div>
+                        <div class="ui-bullet-content">
+                            <h3>Банковский счёт</h3>
+                            <p>Займ будет переведён в течение 3 рабочих дней на лицевой счёт в ОАО "Сбербанк России".</p> 
+                            </br/>
+                            <button popover-placement="top" popover-title="Аккаунт не идентифицирован" popover="Пожалуйста, пройдите идентификацию для получения займа" popover-append-to-body="true" class="btn btn-success">Получить деньги</button>
+                        </div>
+                    </div>                    
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="ui-bullet">
+                        <div class="btn-icon btn-icon-round btn-icon-lg bg-primary">
+                            <p>Я</p>
+                        </div>
+                        <div class="ui-bullet-content">
+                            <h3>Яндекс деньги</h3>
+                            <p>Получите займ в виртуальной валюте Яндекс Деньги всего за 15 минут.</p> 
+                            </br/>
+                            <button popover-placement="top" popover-title="Аккаунт не идентифицирован" popover="Пожалуйста, пройдите идентификацию для получения займа" popover-append-to-body="true" class="btn btn-success">Получить деньги</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="ui-bullet">
+                        <div class="btn-icon btn-icon-round btn-icon-lg bg-primary">
+                            <p>W</p>
+                        </div>
+                        <div class="ui-bullet-content">
+                            <h3>WebMoney</h3>
+                            <p>Перевод займа на рублёвый кошелёк WebMoney с персональным аттестатом.</p> 
+                            </br/>
+                            <button popover-placement="top" popover-title="Аккаунт не идентифицирован" popover="Пожалуйста, пройдите идентификацию для получения займа" popover-append-to-body="true" class="btn btn-success">Получить деньги</button>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="col-md-4">
+                    <div class="ui-bullet">
+                        <div class="btn-icon btn-icon-round btn-icon-lg bg-primary">
+                            <i class="fa fa-money"></i>
+                        </div>
+                        <div class="ui-bullet-content">
+                            <h3>Наличные Евросеть</h3>
+                            <p>Получите займ наличными в ближайшем салоне сотовой связи "Евросеть" за 15 минут.</p> 
+                            </br/>
+                           <button popover-placement="top" popover-title="Аккаунт не идентифицирован" popover="Пожалуйста, пройдите идентификацию для получения займа" popover-append-to-body="true" class="btn btn-success">Получить деньги</button>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+
+            <div class="divider divider-lg"></div>
+        </div>
+    </section>
+
+
+
+</div>
+  
